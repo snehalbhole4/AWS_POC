@@ -118,8 +118,7 @@ def buildResponse(statusCode,body=None):
         }
     }
     if body is not None:
-        #response['body'] = json.dumps(body,cls=CustomeEncoder)
-        response['body'] = body
+        response['body'] = json.dumps(body,cls=CustomeEncoder)
         
     return response
 
